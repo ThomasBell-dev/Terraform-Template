@@ -2,9 +2,9 @@
 
 terraform {
   backend "gcs" {
-    bucket = "terraformstate065"
+    bucket = "deathstarbucket-tf"
     prefix = "terraform/state"
-    credentials = "mykey.json"
+    credentials = "cloudrunner_key.json"
   }
   required_providers {
     google = {

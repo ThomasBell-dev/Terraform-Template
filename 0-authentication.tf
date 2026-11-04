@@ -1,7 +1,7 @@
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs
 
 provider "google" {
-  project = "true-artwork-456400-g8"
+  project = "seir-cloudrunner"
   region  = "southamerica-east1"
-  credentials = "mykey.json"
+  credentials = "cloudrunner_key.json"
 }
