@@ -11,8 +11,8 @@
 
 resource "google_compute_subnetwork" "farm-life" {
   name                     = "farm-life"
-  ip_cidr_range            = "10.0.255.0/24"
-  region                   = "us-central1"
+  ip_cidr_range            = var.subnet_cidr
+  region                   = var.region
   network                  = google_compute_network.main.id
   private_ip_google_access = true
 
